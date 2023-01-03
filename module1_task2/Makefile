@@ -14,3 +14,7 @@ help: ## if you need help
 	@echo "	clean: to clean the site"
 	@echo "	post: to post in the site"
 	@echo "	help: to help"
+	@echo "To build the website, run '$(MAKE) build'"
+	@echo "To clean the website, run '$(MAKE) clean'"
+	@echo "To post something to the site, run '$(MAKE) post'"
+	@echo "To ask for help, run '$(MAKE) help'"
