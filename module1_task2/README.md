@@ -5,7 +5,7 @@
 
 ## Lifecycle
 
-'build' to build the website
-'clean' to clean the website
-'post' to update the website
-'help' if you want help
+`build` to build the website
+`clean` to clean the website
+`post` to update the website
+`help` if you want help
