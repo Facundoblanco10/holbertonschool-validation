@@ -6,10 +6,12 @@ chmod +x setup.sh
 echo "Setting up production website in Docker container..."
 docker run -it --name production_website -p 80:80 ubuntu:18.04
 
-# Install GoHugo and Make with apt-get
-echo "Installing GoHugo and Make..."
-apt-get update && apt-get install -y hugo make
+# Install wget and Make with apt-get
+echo "Installing GoHugo, wget and Make..."
+apt-get update && apt-get install -y make wget
+wget https://github.com/gohugoio/hugo/releases/download/v0.79.0/hugo_0.79.0_Linux-64bit.deb
+dpkg -i hugo_0.79.0_Linux-64bit.deb
 
 # Run the make build command
 echo "Running make build..."
-make -n build
+make build
