@@ -9,3 +9,6 @@
 `clean` to clean the website
 `post` to update the website
 `help` if you want help
+
+
+## Workflow
