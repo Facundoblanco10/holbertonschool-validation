@@ -1,0 +1,12 @@
+name: module3_task0
+on:
+  schedule: 
+    - cron: "0 0 * * *"
+  push:
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: cd module3_task0
+      - run: make help
